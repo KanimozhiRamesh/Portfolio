@@ -16,7 +16,7 @@
     <div class="logo">Kanimozhi R</div>
     <ul>
       <li><a href="https://drive.google.com/file/d/1Xp2yKpZwyU2n0rhQokndHldahcENpmzM/view?usp=drivesdk" target="_blank">Download Resume</a></li>
-      <li><a href="https://github.com/kanimozhi-portfolio" target="_blank">GitHub</a></li>
+      <li><a href="https://github.com/KanimozhiRamesh/Portfolio" target="_blank">GitHub</a></li>
       <li><a href="#home" class="nav-link active">Home</a></li>
       <li><a href="#about" class="nav-link">About</a></li>
       <li><a href="#education" class="nav-link">Education</a></li>
@@ -166,12 +166,20 @@
 
   <section id="contact">
     <h2 class="section-title">Contact Me</h2>
-    <form onsubmit="sendWhatsApp(); return false;">
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="email" id="email" placeholder="Your Email" required>
-      <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+  <form action="https://formsubmit.co/kanimozhikanimozhi813@gmail.com" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+  
+  <!-- Optional: To disable captcha -->
+  <input type="hidden" name="_captcha" value="false">
+  
+  <!-- Optional: Redirect after submit -->
+  <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+
+  <button type="submit">Send</button>
+</form>
+
     <p style="margin-top: 20px;">
       Or message me directly on <a href="https://wa.me/916383740822" target="_blank" style="color:#00ffe5;">WhatsApp</a>
     </p>
